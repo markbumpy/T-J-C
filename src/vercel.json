@@ -24,5 +24,8 @@
         "src": "/(.*)",
         "dest": "tjc/wsgi.py"
       }
-    ]
+    ],
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/" }
+      ]
   }
