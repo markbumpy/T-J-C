@@ -14,7 +14,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{% static 'images/teevo.jpeg' %}" class="d-block w-100" alt="...">
+            <img src="{% static 'images/teevo.jpeg' %}" class="d-block w-100 img-fluid" alt="...">
           </div>
           <div class="carousel-item">
             <img src="{% static 'images/souls.jpeg' %}" class="d-block w-100" alt="...">
@@ -94,19 +94,19 @@
     </div>
  
 
-<div class="container px-5">
+<div class="container">
     <div class="row mx-auto">
         {% for product in products %}
         <div class="col-md-4 mb-4">
-            <div class="card mb-3 h-100" style="max-width: 400px; overflow: hidden;" id="Shop">
+            <div class="card mb-3 h-100 w-100" style="max-width: 500px;" id="Shop">
                 <h3 class="card-header">{{ product.name }}</h3>
                 <div class="card-body">
                     <h5 class="card-title">₦{{product.product_price}}</h5>
                     <h6 class="card-subtitle text-muted">Don't be left out</h6>
                 </div>
-                <img src="{{product.product_image.url}}" alt="">
+                <img src="{{product.product_image.url}}" class="img-fluid alt="">
                 <div class="card-body">
-                    <p class="card-text">{{product.product_description}}.</p>
+                    <p class="card-text" style="word-wrap: break-word;">{{product.product_description}}.</p>
                 </div>
                 <div class="card-body">
                     <a href="https://wa.me/message/IOCKRMJEJ5XEM1" class="btn">Shop</a>

@@ -1,7 +1,5 @@
 *{
     font-family: 'Poppins', sans-serif;
-    /* font-weight: 100; */
-    /* letter-spacing: 2px; */
 }
 
 
@@ -102,7 +100,7 @@
 
 
 .w-100{
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -206,4 +204,9 @@
 
 .center-wrapper {
     text-align: center;
+}
+
+/* Custom styles for screens smaller than 768px */
+@media (max-width: 767px) {
+    /* Add your custom CSS rules here */
 }
