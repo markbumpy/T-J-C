@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    /* Custom CSS for form styling */
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .card {
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 50%;
+    }
+</style>
+</head>
+<body>
+<div class="form-container">
+    <div class="card">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="exampleInputFirstName" class="form-label mt-4">First Name</label>
+                {% comment %} <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Your First Name"> {% endcomment %}
+                {{form.first_name}}
+            </div>
+            <div class="form-group">
+                <label for="exampleInputLastName" class="form-label mt-4">Last Name</label>
+                {% comment %} <input type="text" class="form-control" id="exampleInputLastName" placeholder="Your Last Name"> {% endcomment %}
+                {{form.last_name}}
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                {% comment %} <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> {% endcomment %}
+                {{form.Email}}
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPhoneNumber" class="form-label mt-4">Phone Number</label>
+                {% comment %} <input type="tel" class="form-control" id="exampleInputPhoneNumber" placeholder="Phone Number" autocomplete="off"> {% endcomment %}
+                {{form.phone_number}}
+            </div>
+
+            <div class="form-group ">
+                <label for="exampleSelect1" class="form-label mt-4">country</label>
+                {{form.country}}
+            </div>
+            <div class="form-group mt-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}
