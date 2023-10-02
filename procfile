@@ -1,1 +1,1 @@
-web gunicorn: tjc.wsgi
+web: gunicorn tjc.wsgi
