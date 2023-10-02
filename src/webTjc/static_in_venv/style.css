@@ -1,6 +1,9 @@
 *{
     font-family: 'Poppins', sans-serif;
+    /* font-weight: 100; */
+    /* letter-spacing: 2px; */
 }
+
 
 .bg-light{
     background-color: transparent, !important;
@@ -195,9 +198,10 @@
 }
 
 .launch-time div p{
-    font-size: 60px;
+    font-size: 100px;
     margin-top: -14px;
     margin: 10px;
+    font-weight: bold;
 }
 
 .center-wrapper {

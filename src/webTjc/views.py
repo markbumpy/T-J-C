@@ -13,7 +13,7 @@ from .models import Register, Contact
 def home(request):
     items = list(Merch.objects.all())
     random.shuffle(items)
-    random_products = items[:4]
+    random_products = items[:6]
     limit = items[:6]
 
     context = {

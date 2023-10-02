@@ -9,32 +9,24 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="{% static 'images/teevo.jpeg' %}" class="d-block w-100" alt="...">
-            <div class="carousel-caption ">
-              {% comment %} <h5 class="animated bounceInRight" style="animation-delay: 1s ;">TEEVO JEANS CARNIVAL 2023!!!</h5> {% endcomment %}
-              {% comment %} <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 1s ;">Some representative placeholder content for the first slide.</p> {% endcomment %}
-              <p class="animated bounceInLeft d-none d-md-block px-5" style="animation-delay: 3s;"><a href="/register">Register Now</a></p>
-            </div>
           </div>
           <div class="carousel-item">
-            <img src="{% static 'images/over.jpg' %}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="animated bounceInRight" style="animation-delay: 1s ;">SOULS  SAVED</h5>
-              <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s ;">Some representative placeholder content for the first slide.</p>
-              <p class="animated bounceInLeft d-none d-md-block mt-5" style="animation-delay: 3s;"><a href="/register">Register Now</a></p>
-            </div>
+            <img src="{% static 'images/souls.jpeg' %}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="{% static 'images/carnival3jpg.jpg' %}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5 class="animated bounceInRight" style="animation-delay: 1s ;">NEW MEMORIES</h5>
-                <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s ;">Some representative placeholder content for the first slide.</p>
-                <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 3s;"><a href="/register">Register Now</a></p>
-            </div>
+            <img src="{% static 'images/friend.jpeg' %}" class="d-block w-100" alt="...">
           </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/funs.jpeg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -65,7 +57,7 @@
                 <h2 class="text-white mt-5">Register to attend!</h2>
                 <hr class="divider divider-light" />
                 <p class="text-white-75 mb-4">
-                {% comment %}  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu" {% endcomment %}
+                <strong> <h4>@ Velodrome Stadium, National Stadium Abuja, Nigeria</h4></strong>
                 Unlock a world of Greate experience and Opportunites by securing your spot at the Teevo jeans carnival. Don't miss out, register to attend!!!
                 </p>
                 <a class="btn btn-light btn-xl mb-4" href="/register">Register Now!</a>
@@ -105,19 +97,19 @@
 <div class="container px-5">
     <div class="row mx-auto">
         {% for product in products %}
-        <div class="col-md-4">
-            <div class="card mb-3" style="max-width: 400px; overflow: hidden;" id="Shop">
+        <div class="col-md-4 mb-4">
+            <div class="card mb-3 h-100" style="max-width: 400px; overflow: hidden;" id="Shop">
                 <h3 class="card-header">{{ product.name }}</h3>
                 <div class="card-body">
-                    <h5 class="card-title">Don't be left Out</h5>
-                    {% comment %} <h6 class="card-subtitle text-muted">Support card subtitl</h6> {% endcomment %}
+                    <h5 class="card-title">₦{{product.product_price}}</h5>
+                    <h6 class="card-subtitle text-muted">Don't be left out</h6>
                 </div>
                 <img src="{{product.product_image.url}}" alt="">
                 <div class="card-body">
                     <p class="card-text">{{product.product_description}}.</p>
                 </div>
                 <div class="card-body">
-                    <a href="https://www.instagram.com/teevojeanscarnival2023" class="btn">Shop</a>
+                    <a href="https://wa.me/message/IOCKRMJEJ5XEM1" class="btn">Shop</a>
                     {% comment %} <a href="#" class="card-link">Another link</a> {% endcomment %}
                 </div>
             </div>
