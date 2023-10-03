@@ -1,0 +1,212 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.bg-light{
+    background-color: transparent, !important;
+}
+
+.text-center h2{
+    font-family: 'Monoton', cursive, !important;
+     
+}
+
+
+/* .navbar-brand{
+
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+} */
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+}
+
+.carousel-inner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.carousel-caption h5{
+    font-size: 6rem;
+    font-family: 'Monoton', cursive;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-caption a{
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #e83283;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    margin-top: 15px;
+    border-radius: 20px;
+    margin-top: 50px;
+
+
+}
+
+
+.carousel-caption a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: scale(0.9) translateY(-5px);
+    color: white;
+}
+
+.navbar-nav a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.navbar-light .navbar-brand{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+
+.w-100{
+    height: 100vh;
+}
+
+
+.navbar-toggler{
+    padding: 1px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav{
+        text-align: center;
+        background: rgba(0,0,0 0.5);
+
+    }
+    .carousel-caption{
+        bottom: 165px;
+    }
+    .carousel-caption h5{
+        font-size: 40px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    
+}
+
+.center-text{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.center-text h2{
+    font-size: 40px;
+    font-family: 'Monoton', cursive, !important;
+
+}
+
+.featured-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+.btn{
+
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #e83283;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    margin-top: 15px;
+    border-radius: 20px;
+
+}
+
+.btn:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: scale(0.9) translateY(-5px);
+    color: white;
+}
+
+.center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    /* height: 100vh; */
+}
+
+.center-wrapper h1{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 3rem;
+   /* text-decoration: underline; */
+}
+
+.launch-time{
+    display: flex;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p{
+    font-size: 100px;
+    margin-top: -14px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.center-wrapper {
+    text-align: center;
+}
+
+/* Custom styles for screens smaller than 768px */
+@media (max-width: 767px) {
+    /* Add your custom CSS rules here */
+}
