@@ -4,11 +4,9 @@ from django.contrib import admin
 from django.urls import path, include
 
 from webTjc.views import home, RegisterView, ContactView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', home, name='home'),
-    # path('register/', RegisterView.as_view(), name='register'),
-    # path('contact/', ContactView.as_view(), name='contact'),
     path('', include('webTjc.urls')),
     
 

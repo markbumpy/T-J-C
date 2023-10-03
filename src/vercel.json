@@ -5,7 +5,7 @@
       {
         "src": "tjc/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+        "config": { "maxLambdaSize": "15mb", "runtime": "now-python@1.0.0" }
       },
       {
         "src": "build_files.sh",
@@ -24,8 +24,5 @@
         "src": "/(.*)",
         "dest": "tjc/wsgi.py"
       }
-    ],
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/" }
-      ]
+    ]
   }
