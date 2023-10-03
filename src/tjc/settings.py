@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-bo0mj-##jf+a5le#s0%4i=j^_n2f2v$cr*46d45=@&sicz!xm3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost', '*']
 
@@ -112,7 +112,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'webTjc/static_in_venv')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_venv')]
 VENV_PATH = os.path.dirname(BASE_DIR)
 STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')
 MEDIA_ROOT = os.path.join(VENV_PATH, 'media_root')
@@ -134,3 +134,22 @@ EMAIL_PORT = 465
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'markbumpy91@gmail.com'
 EMAIL_HOST_PASSWORD = 'gpeg jkle iglm ojfe'
+
+
+#logs
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'django.log',  # Specify the path to your log file
+        },
+    },
+    'root': {
+        'handlers': ['file'],
+        'level': 'DEBUG',
+    },
+}
