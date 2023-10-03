@@ -3,7 +3,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "tjc/wsgi.py",
+        "src": "src/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "now-python@1.0.0" }
       },
@@ -22,7 +22,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "tjc/wsgi.py"
+        "dest": "src/wsgi.py"
       }
     ]
   }
